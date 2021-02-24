@@ -1,1 +1,1 @@
-Here you can find my NetDevOps-related works
+Here you can find my NetDevOps-related scripts
