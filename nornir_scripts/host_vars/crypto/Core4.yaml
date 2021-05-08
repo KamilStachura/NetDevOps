@@ -8,7 +8,7 @@ native:
           certificate:
             serial: '01'
             certtype: ca
-        - name: TP-self-signed-151682397
+        - name: TP-self-signed-2760747030
           certificate:
             serial: '01'
             certtype: self-signed
@@ -18,10 +18,10 @@ native:
         enrollment:
           pkcs12: null
         revocation-check: crl
-      - id: TP-self-signed-151682397
+      - id: TP-self-signed-2760747030
         enrollment:
           selfsigned: null
         revocation-check: none
-        subject-name: cn=IOS-Self-Signed-Certificate-151682397
+        subject-name: cn=IOS-Self-Signed-Certificate-2760747030
       _xmlns: http://cisco.com/ns/yang/Cisco-IOS-XE-crypto
   _xmlns: http://cisco.com/ns/yang/Cisco-IOS-XE-native

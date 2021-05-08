@@ -41,6 +41,10 @@ ip:
   vrf:
   - name: MGMT
     description: OOB Management
+  static_routes:
+  - network: 172.168.100.0
+    mask: 255.255.255.0
+    fwd: 1.1.1.1
   extended_acl:
   - name: '111'
     sequences:
@@ -51,10 +55,20 @@ ip:
       srcmask: 0.0.0.255
       destip: 172.168.100.0
       destmask: 0.0.0.255
-#  static_routes:
-#  - network: 172.168.100.0
-#    mask: 255.255.255.0
-#    fwd: 1.1.1.1
+  - name: '150'
+    sequences:
+    - number: '10'
+      action: permit
+      protocol: ip
+      srcip: 192.168.100.0
+      srcmask: 0.0.0.255
+      destip: 192.168.200.0
+      destmask: 0.0.0.255
+    - number: '20'
+      action: deny
+      protocol: ip
+      srcany: 'True'
+      destany: 'True'
 
 interfaces:
   GigEthernet:
@@ -114,5 +128,5 @@ crypto:
     peer: 1.1.1.1
     pfs: group24
     transform_set: Core2-Core1
-  self_signed_certificate: '3141318562'
+  self_signed_certificate: '3831413737'
 

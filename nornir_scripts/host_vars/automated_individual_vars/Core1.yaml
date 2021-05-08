@@ -41,6 +41,10 @@ ip:
   vrf:
   - name: MGMT
     description: OOB Management
+  static_routes:
+  - network: 172.168.200.0
+    mask: 255.255.255.0
+    fwd: 1.1.1.2
   extended_acl:
   - name: '111'
     sequences:
@@ -110,5 +114,5 @@ crypto:
     peer: 1.1.1.2
     pfs: group24
     transform_set: Core1-Core2
-  self_signed_certificate: '2106910356'
+  self_signed_certificate: '3667049140'
 

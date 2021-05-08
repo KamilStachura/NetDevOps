@@ -1,0 +1,497 @@
+2021-05-01 13:17:43,250 -  nornir.core -     INFO -        run() - Running task 'config_lock' with args {} on 4 hosts
+2021-05-01 13:17:44,178 - nornir.core.task -    ERROR -      start() - Host 'Core3': task 'config_lock' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_nojinja_push.py", line 26, in config_lock
+    task.run(task=netconf_lock, target="candidate", name="Locking Candidate Configuration")
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Locking Candidate Configuration (failed)
+
+
+2021-05-01 13:17:44,183 - nornir.core.task -    ERROR -      start() - Host 'Core4': task 'config_lock' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_nojinja_push.py", line 26, in config_lock
+    task.run(task=netconf_lock, target="candidate", name="Locking Candidate Configuration")
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Locking Candidate Configuration (failed)
+
+
+2021-05-01 13:17:44,292 - nornir.core.task -    ERROR -      start() - Host 'Core1': task 'config_lock' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_nojinja_push.py", line 26, in config_lock
+    task.run(task=netconf_lock, target="candidate", name="Locking Candidate Configuration")
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Locking Candidate Configuration (failed)
+
+
+2021-05-01 13:17:44,320 - nornir.core.task -    ERROR -      start() - Host 'Core2': task 'config_lock' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_nojinja_push.py", line 26, in config_lock
+    task.run(task=netconf_lock, target="candidate", name="Locking Candidate Configuration")
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Locking Candidate Configuration (failed)
+
+
+2021-05-01 13:17:44,342 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'ntp'} on 4 hosts
+2021-05-01 13:17:44,342 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'router'} on 4 hosts
+2021-05-01 13:17:44,343 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'interface'} on 4 hosts
+2021-05-01 13:17:44,343 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'crypto'} on 4 hosts
+2021-05-01 13:17:44,343 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'enable'} on 4 hosts
+2021-05-01 13:17:44,344 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'ip'} on 4 hosts
+2021-05-01 13:17:44,344 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'line'} on 4 hosts
+2021-05-01 13:17:44,344 -  nornir.core -     INFO -        run() - Running task 'config_discard' with args {} on 4 hosts
+2021-05-01 13:17:44,345 -  nornir.core -     INFO -        run() - Running task 'config_unlock' with args {} on 4 hosts
+2021-05-01 13:19:12,393 -  nornir.core -     INFO -        run() - Running task 'config_lock' with args {} on 4 hosts
+2021-05-01 13:19:13,539 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'ntp'} on 4 hosts
+2021-05-01 13:19:13,668 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'router'} on 4 hosts
+2021-05-01 13:19:13,799 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'interface'} on 4 hosts
+2021-05-01 13:19:14,116 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'crypto'} on 4 hosts
+2021-05-01 13:19:14,283 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'enable'} on 4 hosts
+2021-05-01 13:19:14,405 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'ip'} on 4 hosts
+2021-05-01 13:19:14,548 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'line'} on 4 hosts
+2021-05-01 13:19:14,671 -  nornir.core -     INFO -        run() - Running task 'config_commit' with args {} on 4 hosts
+2021-05-01 13:19:21,096 - nornir.core.task -    ERROR -      start() - Host 'Core3': task 'config_commit' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_nojinja_push.py", line 34, in config_commit
+    task.run(task=netconf_commit, name="Committing Candidate Configuration")
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Committing Candidate Configuration (failed)
+
+
+2021-05-01 13:19:21,297 - nornir.core.task -    ERROR -      start() - Host 'Core4': task 'config_commit' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_nojinja_push.py", line 34, in config_commit
+    task.run(task=netconf_commit, name="Committing Candidate Configuration")
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Committing Candidate Configuration (failed)
+
+
+2021-05-01 13:19:26,286 - nornir.core.task -    ERROR -      start() - Host 'Core2': task 'config_commit' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_nojinja_push.py", line 34, in config_commit
+    task.run(task=netconf_commit, name="Committing Candidate Configuration")
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Committing Candidate Configuration (failed)
+
+
+2021-05-01 13:19:26,510 - nornir.core.task -    ERROR -      start() - Host 'Core1': task 'config_commit' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_nojinja_push.py", line 34, in config_commit
+    task.run(task=netconf_commit, name="Committing Candidate Configuration")
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Committing Candidate Configuration (failed)
+
+
+2021-05-01 13:19:26,547 -  nornir.core -     INFO -        run() - Running task 'config_unlock' with args {} on 4 hosts
+2021-05-01 13:22:24,127 -  nornir.core -     INFO -        run() - Running task 'config_lock' with args {} on 4 hosts
+2021-05-01 13:22:25,979 - nornir.core.task -    ERROR -      start() - Host 'Core3': task 'Locking Candidate Configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir_scrapli/tasks/netconf_lock.py", line 25, in netconf_lock
+    scrapli_conn = task.host.get_connection("scrapli_netconf", task.nornir.config)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/inventory.py", line 448, in get_connection
+    extras=conn.extras,
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/inventory.py", line 499, in open_connection
+    configuration=configuration,
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir_scrapli/connection.py", line 166, in open
+    connection.open()
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/scrapli_netconf/driver/driver.py", line 64, in open
+    login_bytes = self.transport.open_netconf()
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/scrapli_netconf/transport/cssh2.py", line 26, in open_netconf
+    super().open()
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/scrapli_ssh2/transport/cssh2.py", line 146, in open
+    raise exc
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/scrapli_ssh2/transport/cssh2.py", line 141, in open
+    self.session.handshake(self.socket.sock)
+  File "ssh2/session.pyx", line 138, in ssh2.session.Session.handshake
+  File "ssh2/utils.pyx", line 156, in ssh2.utils.handle_error_codes
+ssh2.exceptions.SocketDisconnectError
+
+2021-05-01 13:22:25,979 - nornir.core.task -    ERROR -      start() - Host 'Core1': task 'Locking Candidate Configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir_scrapli/tasks/netconf_lock.py", line 25, in netconf_lock
+    scrapli_conn = task.host.get_connection("scrapli_netconf", task.nornir.config)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/inventory.py", line 448, in get_connection
+    extras=conn.extras,
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/inventory.py", line 499, in open_connection
+    configuration=configuration,
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir_scrapli/connection.py", line 166, in open
+    connection.open()
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/scrapli_netconf/driver/driver.py", line 64, in open
+    login_bytes = self.transport.open_netconf()
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/scrapli_netconf/transport/cssh2.py", line 26, in open_netconf
+    super().open()
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/scrapli_ssh2/transport/cssh2.py", line 146, in open
+    raise exc
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/scrapli_ssh2/transport/cssh2.py", line 141, in open
+    self.session.handshake(self.socket.sock)
+  File "ssh2/session.pyx", line 138, in ssh2.session.Session.handshake
+  File "ssh2/utils.pyx", line 156, in ssh2.utils.handle_error_codes
+ssh2.exceptions.SocketDisconnectError
+
+2021-05-01 13:22:25,980 - nornir.core.task -    ERROR -      start() - Host 'Core3': task 'config_lock' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_nojinja_push.py", line 26, in config_lock
+    task.run(task=netconf_lock, target="candidate", name="Locking Candidate Configuration")
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Locking Candidate Configuration (failed)
+
+
+2021-05-01 13:22:25,980 - nornir.core.task -    ERROR -      start() - Host 'Core1': task 'config_lock' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_nojinja_push.py", line 26, in config_lock
+    task.run(task=netconf_lock, target="candidate", name="Locking Candidate Configuration")
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Locking Candidate Configuration (failed)
+
+
+2021-05-01 13:22:25,986 - nornir.core.task -    ERROR -      start() - Host 'Core2': task 'Locking Candidate Configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir_scrapli/tasks/netconf_lock.py", line 25, in netconf_lock
+    scrapli_conn = task.host.get_connection("scrapli_netconf", task.nornir.config)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/inventory.py", line 448, in get_connection
+    extras=conn.extras,
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/inventory.py", line 499, in open_connection
+    configuration=configuration,
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir_scrapli/connection.py", line 166, in open
+    connection.open()
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/scrapli_netconf/driver/driver.py", line 64, in open
+    login_bytes = self.transport.open_netconf()
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/scrapli_netconf/transport/cssh2.py", line 26, in open_netconf
+    super().open()
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/scrapli_ssh2/transport/cssh2.py", line 146, in open
+    raise exc
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/scrapli_ssh2/transport/cssh2.py", line 141, in open
+    self.session.handshake(self.socket.sock)
+  File "ssh2/session.pyx", line 138, in ssh2.session.Session.handshake
+  File "ssh2/utils.pyx", line 156, in ssh2.utils.handle_error_codes
+ssh2.exceptions.SocketDisconnectError
+
+2021-05-01 13:22:25,986 - nornir.core.task -    ERROR -      start() - Host 'Core2': task 'config_lock' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_nojinja_push.py", line 26, in config_lock
+    task.run(task=netconf_lock, target="candidate", name="Locking Candidate Configuration")
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Locking Candidate Configuration (failed)
+
+
+2021-05-01 13:22:25,993 - nornir.core.task -    ERROR -      start() - Host 'Core4': task 'Locking Candidate Configuration' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir_scrapli/tasks/netconf_lock.py", line 25, in netconf_lock
+    scrapli_conn = task.host.get_connection("scrapli_netconf", task.nornir.config)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/inventory.py", line 448, in get_connection
+    extras=conn.extras,
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/inventory.py", line 499, in open_connection
+    configuration=configuration,
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir_scrapli/connection.py", line 166, in open
+    connection.open()
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/scrapli_netconf/driver/driver.py", line 64, in open
+    login_bytes = self.transport.open_netconf()
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/scrapli_netconf/transport/cssh2.py", line 26, in open_netconf
+    super().open()
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/scrapli_ssh2/transport/cssh2.py", line 146, in open
+    raise exc
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/scrapli_ssh2/transport/cssh2.py", line 141, in open
+    self.session.handshake(self.socket.sock)
+  File "ssh2/session.pyx", line 138, in ssh2.session.Session.handshake
+  File "ssh2/utils.pyx", line 156, in ssh2.utils.handle_error_codes
+ssh2.exceptions.SocketDisconnectError
+
+2021-05-01 13:22:25,993 - nornir.core.task -    ERROR -      start() - Host 'Core4': task 'config_lock' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_nojinja_push.py", line 26, in config_lock
+    task.run(task=netconf_lock, target="candidate", name="Locking Candidate Configuration")
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: Locking Candidate Configuration (failed)
+
+
+2021-05-01 13:22:26,048 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'ntp'} on 4 hosts
+2021-05-01 13:22:26,049 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'router'} on 4 hosts
+2021-05-01 13:22:26,049 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'interface'} on 4 hosts
+2021-05-01 13:22:26,050 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'crypto'} on 4 hosts
+2021-05-01 13:22:26,050 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'enable'} on 4 hosts
+2021-05-01 13:22:26,051 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'ip'} on 4 hosts
+2021-05-01 13:22:26,052 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'line'} on 4 hosts
+2021-05-01 13:22:26,054 -  nornir.core -     INFO -        run() - Running task 'config_discard' with args {} on 4 hosts
+2021-05-01 13:22:26,055 -  nornir.core -     INFO -        run() - Running task 'config_unlock' with args {} on 4 hosts
+2021-05-01 14:18:57,859 -  nornir.core -     INFO -        run() - Running task 'config_lock' with args {} on 4 hosts
+2021-05-01 14:19:13,653 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'ntp'} on 4 hosts
+2021-05-01 14:19:15,112 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'router'} on 4 hosts
+2021-05-01 14:19:16,772 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'interface'} on 4 hosts
+2021-05-01 14:19:18,839 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'crypto'} on 4 hosts
+2021-05-01 14:19:19,688 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'enable'} on 4 hosts
+2021-05-01 14:19:19,820 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'ip'} on 4 hosts
+2021-05-01 14:19:20,628 -  nornir.core -     INFO -        run() - Running task 'edit_nc_config_from_yaml' with args {'feature': 'line'} on 4 hosts
+2021-05-01 14:19:20,758 -  nornir.core -     INFO -        run() - Running task 'config_commit' with args {} on 4 hosts
+2021-05-01 14:19:37,952 -  nornir.core -     INFO -        run() - Running task 'config_unlock' with args {} on 4 hosts
+2021-05-01 14:25:29,528 -  nornir.core -     INFO -        run() - Running task 'get_ntp' with args {} on 4 hosts
+2021-05-01 14:25:30,977 -  nornir.core -     INFO -        run() - Running task 'get_router' with args {} on 4 hosts
+2021-05-01 14:25:31,378 -  nornir.core -     INFO -        run() - Running task 'get_ip' with args {} on 4 hosts
+2021-05-01 14:25:31,675 -  nornir.core -     INFO -        run() - Running task 'get_interface' with args {} on 4 hosts
+2021-05-01 14:25:32,071 -  nornir.core -     INFO -        run() - Running task 'get_crypto' with args {} on 4 hosts
+2021-05-01 14:26:51,043 -  nornir.core -     INFO -        run() - Running task 'get_ntp' with args {} on 4 hosts
+2021-05-01 14:26:52,392 -  nornir.core -     INFO -        run() - Running task 'get_router' with args {} on 4 hosts
+2021-05-01 14:26:52,652 -  nornir.core -     INFO -        run() - Running task 'get_ip' with args {} on 4 hosts
+2021-05-01 14:26:52,910 -  nornir.core -     INFO -        run() - Running task 'get_interface' with args {} on 4 hosts
+2021-05-01 14:26:53,262 -  nornir.core -     INFO -        run() - Running task 'get_crypto' with args {} on 4 hosts
+2021-05-01 14:27:30,298 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'router'} on 4 hosts
+2021-05-01 14:27:31,676 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'ntp'} on 4 hosts
+2021-05-01 14:27:31,820 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'interface'} on 4 hosts
+2021-05-01 14:27:32,175 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'crypto'} on 4 hosts
+2021-05-01 14:27:32,463 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'enable'} on 4 hosts
+2021-05-01 14:27:32,606 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'ip'} on 4 hosts
+2021-05-01 14:27:32,812 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'line'} on 4 hosts
+2021-05-01 14:55:45,903 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'router'} on 4 hosts
+2021-05-01 14:55:47,212 - nornir.core.task -    ERROR -      start() - Host 'Core3': task 'get_feature' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_feature_get.py", line 52, in get_feature
+    yaml.safe_dump(data, yf, allow_unicode=True, sort_keys=False)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/__init__.py", line 306, in safe_dump
+    return dump_all([data], stream, Dumper=SafeDumper, **kwds)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/__init__.py", line 278, in dump_all
+    dumper.represent(data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 27, in represent
+    node = self.represent_data(data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 58, in represent_data
+    node = self.yaml_representers[None](self, data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 231, in represent_undefined
+    raise RepresenterError("cannot represent an object", data)
+yaml.representer.RepresenterError: ('cannot represent an object', <_io.TextIOWrapper name='/home/kamil/Hons/host_vars/router/Core3.json' mode='w' encoding='UTF-8'>)
+
+2021-05-01 14:55:47,231 - nornir.core.task -    ERROR -      start() - Host 'Core2': task 'get_feature' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_feature_get.py", line 52, in get_feature
+    yaml.safe_dump(data, yf, allow_unicode=True, sort_keys=False)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/__init__.py", line 306, in safe_dump
+    return dump_all([data], stream, Dumper=SafeDumper, **kwds)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/__init__.py", line 278, in dump_all
+    dumper.represent(data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 27, in represent
+    node = self.represent_data(data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 58, in represent_data
+    node = self.yaml_representers[None](self, data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 231, in represent_undefined
+    raise RepresenterError("cannot represent an object", data)
+yaml.representer.RepresenterError: ('cannot represent an object', <_io.TextIOWrapper name='/home/kamil/Hons/host_vars/router/Core2.json' mode='w' encoding='UTF-8'>)
+
+2021-05-01 14:55:47,248 - nornir.core.task -    ERROR -      start() - Host 'Core1': task 'get_feature' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_feature_get.py", line 52, in get_feature
+    yaml.safe_dump(data, yf, allow_unicode=True, sort_keys=False)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/__init__.py", line 306, in safe_dump
+    return dump_all([data], stream, Dumper=SafeDumper, **kwds)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/__init__.py", line 278, in dump_all
+    dumper.represent(data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 27, in represent
+    node = self.represent_data(data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 58, in represent_data
+    node = self.yaml_representers[None](self, data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 231, in represent_undefined
+    raise RepresenterError("cannot represent an object", data)
+yaml.representer.RepresenterError: ('cannot represent an object', <_io.TextIOWrapper name='/home/kamil/Hons/host_vars/router/Core1.json' mode='w' encoding='UTF-8'>)
+
+2021-05-01 14:55:47,259 - nornir.core.task -    ERROR -      start() - Host 'Core4': task 'get_feature' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_feature_get.py", line 52, in get_feature
+    yaml.safe_dump(data, yf, allow_unicode=True, sort_keys=False)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/__init__.py", line 306, in safe_dump
+    return dump_all([data], stream, Dumper=SafeDumper, **kwds)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/__init__.py", line 278, in dump_all
+    dumper.represent(data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 27, in represent
+    node = self.represent_data(data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 58, in represent_data
+    node = self.yaml_representers[None](self, data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 231, in represent_undefined
+    raise RepresenterError("cannot represent an object", data)
+yaml.representer.RepresenterError: ('cannot represent an object', <_io.TextIOWrapper name='/home/kamil/Hons/host_vars/router/Core4.json' mode='w' encoding='UTF-8'>)
+
+2021-05-01 14:55:47,279 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'ntp'} on 4 hosts
+2021-05-01 14:55:47,283 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'interface'} on 4 hosts
+2021-05-01 14:55:47,283 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'crypto'} on 4 hosts
+2021-05-01 14:55:47,284 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'enable'} on 4 hosts
+2021-05-01 14:55:47,284 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'ip'} on 4 hosts
+2021-05-01 14:55:47,284 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'line'} on 4 hosts
+2021-05-01 14:56:19,069 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'router'} on 4 hosts
+2021-05-01 14:56:19,796 - nornir.core.task -    ERROR -      start() - Host 'Core2': task 'get_feature' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_feature_get.py", line 46, in get_feature
+    data = json.load(f)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/simplejson/__init__.py", line 467, in load
+    return loads(fp.read(),
+io.UnsupportedOperation: not readable
+
+2021-05-01 14:56:20,028 - nornir.core.task -    ERROR -      start() - Host 'Core4': task 'get_feature' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_feature_get.py", line 46, in get_feature
+    data = json.load(f)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/simplejson/__init__.py", line 467, in load
+    return loads(fp.read(),
+io.UnsupportedOperation: not readable
+
+2021-05-01 14:56:20,111 - nornir.core.task -    ERROR -      start() - Host 'Core3': task 'get_feature' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_feature_get.py", line 46, in get_feature
+    data = json.load(f)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/simplejson/__init__.py", line 467, in load
+    return loads(fp.read(),
+io.UnsupportedOperation: not readable
+
+2021-05-01 14:56:20,133 - nornir.core.task -    ERROR -      start() - Host 'Core1': task 'get_feature' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_feature_get.py", line 46, in get_feature
+    data = json.load(f)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/simplejson/__init__.py", line 467, in load
+    return loads(fp.read(),
+io.UnsupportedOperation: not readable
+
+2021-05-01 14:56:20,150 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'ntp'} on 4 hosts
+2021-05-01 14:56:20,151 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'interface'} on 4 hosts
+2021-05-01 14:56:20,151 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'crypto'} on 4 hosts
+2021-05-01 14:56:20,151 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'enable'} on 4 hosts
+2021-05-01 14:56:20,151 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'ip'} on 4 hosts
+2021-05-01 14:56:20,151 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'line'} on 4 hosts
+2021-05-01 14:57:14,220 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'router'} on 4 hosts
+2021-05-01 14:57:15,212 - nornir.core.task -    ERROR -      start() - Host 'Core2': task 'get_feature' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_feature_get.py", line 51, in get_feature
+    yaml.safe_dump(doc3, yf, allow_unicode=True, sort_keys=False)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/__init__.py", line 306, in safe_dump
+    return dump_all([data], stream, Dumper=SafeDumper, **kwds)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/__init__.py", line 278, in dump_all
+    dumper.represent(data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 27, in represent
+    node = self.represent_data(data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 58, in represent_data
+    node = self.yaml_representers[None](self, data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 231, in represent_undefined
+    raise RepresenterError("cannot represent an object", data)
+yaml.representer.RepresenterError: ('cannot represent an object', OrderedDict([('native', OrderedDict([('router', OrderedDict([('_operation', 'replace'), ('bgp', OrderedDict([('id', '65001'), ('bgp', OrderedDict([('log-neighbor-changes', 'true'), ('router-id', OrderedDict([('ip-id', '1.1.1.2')]))])), ('neighbor', [OrderedDict([('id', '1.1.1.1'), ('remote-as', '65001'), ('update-source', OrderedDict([('Loopback', '0')]))]), OrderedDict([('id', '1.1.1.3'), ('remote-as', '65001'), ('update-source', OrderedDict([('Loopback', '0')]))]), OrderedDict([('id', '1.1.1.4'), ('remote-as', '65001'), ('update-source', OrderedDict([('Loopback', '0')]))])]), ('address-family', OrderedDict([('no-vrf', OrderedDict([('ipv4', [OrderedDict([('af-name', 'unicast'), ('ipv4-unicast', OrderedDict([('neighbor', [OrderedDict([('id', '1.1.1.1'), ('activate', None)]), OrderedDict([('id', '1.1.1.3'), ('activate', None)]), OrderedDict([('id', '1.1.1.4'), ('activate', None)])]), ('network', OrderedDict([('with-mask', OrderedDict([('number', '20.20.20.0'), ('mask', '255.255.255.0')]))]))]))]), OrderedDict([('af-name', 'multicast')])])]))])), ('_xmlns', 'http://cisco.com/ns/yang/Cisco-IOS-XE-bgp')])), ('ospf', OrderedDict([('id', '1'), ('router-id', '1.1.1.2'), ('network', [OrderedDict([('ip', '1.1.1.2'), ('mask', '0.0.0.0'), ('area', '0')]), OrderedDict([('ip', '172.168.200.0'), ('mask', '0.0.0.255'), ('area', '0')])]), ('_xmlns', 'http://cisco.com/ns/yang/Cisco-IOS-XE-ospf')]))])), ('_xmlns', 'http://cisco.com/ns/yang/Cisco-IOS-XE-native')]))]))
+
+2021-05-01 14:57:15,257 - nornir.core.task -    ERROR -      start() - Host 'Core3': task 'get_feature' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_feature_get.py", line 51, in get_feature
+    yaml.safe_dump(doc3, yf, allow_unicode=True, sort_keys=False)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/__init__.py", line 306, in safe_dump
+    return dump_all([data], stream, Dumper=SafeDumper, **kwds)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/__init__.py", line 278, in dump_all
+    dumper.represent(data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 27, in represent
+    node = self.represent_data(data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 58, in represent_data
+    node = self.yaml_representers[None](self, data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 231, in represent_undefined
+    raise RepresenterError("cannot represent an object", data)
+yaml.representer.RepresenterError: ('cannot represent an object', OrderedDict([('native', OrderedDict([('router', OrderedDict([('_operation', 'replace'), ('bgp', OrderedDict([('id', '65001'), ('bgp', OrderedDict([('log-neighbor-changes', 'true'), ('router-id', OrderedDict([('ip-id', '1.1.1.3')]))])), ('neighbor', [OrderedDict([('id', '1.1.1.1'), ('remote-as', '65001'), ('update-source', OrderedDict([('Loopback', '0')]))]), OrderedDict([('id', '1.1.1.2'), ('remote-as', '65001'), ('update-source', OrderedDict([('Loopback', '0')]))]), OrderedDict([('id', '1.1.1.4'), ('remote-as', '65001'), ('update-source', OrderedDict([('Loopback', '0')]))])]), ('address-family', OrderedDict([('no-vrf', OrderedDict([('ipv4', [OrderedDict([('af-name', 'unicast'), ('ipv4-unicast', OrderedDict([('neighbor', [OrderedDict([('id', '1.1.1.1'), ('activate', None)]), OrderedDict([('id', '1.1.1.2'), ('activate', None)]), OrderedDict([('id', '1.1.1.4'), ('activate', None)])]), ('network', OrderedDict([('with-mask', OrderedDict([('number', '30.30.30.0'), ('mask', '255.255.255.0')]))]))]))]), OrderedDict([('af-name', 'multicast')])])]))])), ('_xmlns', 'http://cisco.com/ns/yang/Cisco-IOS-XE-bgp')])), ('ospf', OrderedDict([('id', '1'), ('router-id', '1.1.1.3'), ('network', OrderedDict([('ip', '1.1.1.3'), ('mask', '0.0.0.0'), ('area', '0')])), ('_xmlns', 'http://cisco.com/ns/yang/Cisco-IOS-XE-ospf')]))])), ('_xmlns', 'http://cisco.com/ns/yang/Cisco-IOS-XE-native')]))]))
+
+2021-05-01 14:57:15,281 - nornir.core.task -    ERROR -      start() - Host 'Core4': task 'get_feature' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_feature_get.py", line 51, in get_feature
+    yaml.safe_dump(doc3, yf, allow_unicode=True, sort_keys=False)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/__init__.py", line 306, in safe_dump
+    return dump_all([data], stream, Dumper=SafeDumper, **kwds)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/__init__.py", line 278, in dump_all
+    dumper.represent(data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 27, in represent
+    node = self.represent_data(data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 58, in represent_data
+    node = self.yaml_representers[None](self, data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 231, in represent_undefined
+    raise RepresenterError("cannot represent an object", data)
+yaml.representer.RepresenterError: ('cannot represent an object', OrderedDict([('native', OrderedDict([('router', OrderedDict([('_operation', 'replace'), ('bgp', OrderedDict([('id', '65001'), ('bgp', OrderedDict([('log-neighbor-changes', 'true'), ('router-id', OrderedDict([('ip-id', '1.1.1.4')]))])), ('neighbor', [OrderedDict([('id', '1.1.1.1'), ('remote-as', '65001'), ('update-source', OrderedDict([('Loopback', '0')]))]), OrderedDict([('id', '1.1.1.2'), ('remote-as', '65001'), ('update-source', OrderedDict([('Loopback', '0')]))]), OrderedDict([('id', '1.1.1.3'), ('remote-as', '65001'), ('update-source', OrderedDict([('Loopback', '0')]))])]), ('address-family', OrderedDict([('no-vrf', OrderedDict([('ipv4', [OrderedDict([('af-name', 'unicast'), ('ipv4-unicast', OrderedDict([('neighbor', [OrderedDict([('id', '1.1.1.1'), ('activate', None)]), OrderedDict([('id', '1.1.1.2'), ('activate', None)]), OrderedDict([('id', '1.1.1.3'), ('activate', None)])]), ('network', OrderedDict([('with-mask', OrderedDict([('number', '40.40.40.0'), ('mask', '255.255.255.0')]))]))]))]), OrderedDict([('af-name', 'multicast')])])]))])), ('_xmlns', 'http://cisco.com/ns/yang/Cisco-IOS-XE-bgp')])), ('ospf', OrderedDict([('id', '1'), ('router-id', '1.1.1.4'), ('network', OrderedDict([('ip', '1.1.1.4'), ('mask', '0.0.0.0'), ('area', '0')])), ('_xmlns', 'http://cisco.com/ns/yang/Cisco-IOS-XE-ospf')]))])), ('_xmlns', 'http://cisco.com/ns/yang/Cisco-IOS-XE-native')]))]))
+
+2021-05-01 14:57:15,340 - nornir.core.task -    ERROR -      start() - Host 'Core1': task 'get_feature' failed with traceback:
+Traceback (most recent call last):
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "NETCONF_feature_get.py", line 51, in get_feature
+    yaml.safe_dump(doc3, yf, allow_unicode=True, sort_keys=False)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/__init__.py", line 306, in safe_dump
+    return dump_all([data], stream, Dumper=SafeDumper, **kwds)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/__init__.py", line 278, in dump_all
+    dumper.represent(data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 27, in represent
+    node = self.represent_data(data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 58, in represent_data
+    node = self.yaml_representers[None](self, data)
+  File "/home/kamil/yetAnotherVirtualEnv/testing_env/lib/python3.6/site-packages/yaml/representer.py", line 231, in represent_undefined
+    raise RepresenterError("cannot represent an object", data)
+yaml.representer.RepresenterError: ('cannot represent an object', OrderedDict([('native', OrderedDict([('router', OrderedDict([('_operation', 'replace'), ('bgp', OrderedDict([('id', '65001'), ('bgp', OrderedDict([('log-neighbor-changes', 'true'), ('router-id', OrderedDict([('ip-id', '1.1.1.1')]))])), ('neighbor', [OrderedDict([('id', '1.1.1.2'), ('remote-as', '65001'), ('update-source', OrderedDict([('Loopback', '0')]))]), OrderedDict([('id', '1.1.1.3'), ('remote-as', '65001'), ('update-source', OrderedDict([('Loopback', '0')]))]), OrderedDict([('id', '1.1.1.4'), ('remote-as', '65001'), ('update-source', OrderedDict([('Loopback', '0')]))])]), ('address-family', OrderedDict([('no-vrf', OrderedDict([('ipv4', [OrderedDict([('af-name', 'unicast'), ('ipv4-unicast', OrderedDict([('neighbor', [OrderedDict([('id', '1.1.1.2'), ('activate', None)]), OrderedDict([('id', '1.1.1.3'), ('activate', None)]), OrderedDict([('id', '1.1.1.4'), ('activate', None)])]), ('network', OrderedDict([('with-mask', OrderedDict([('number', '10.10.10.0'), ('mask', '255.255.255.0')]))]))]))]), OrderedDict([('af-name', 'multicast')])])]))])), ('_xmlns', 'http://cisco.com/ns/yang/Cisco-IOS-XE-bgp')])), ('ospf', OrderedDict([('id', '1'), ('router-id', '1.1.1.1'), ('network', [OrderedDict([('ip', '1.1.1.1'), ('mask', '0.0.0.0'), ('area', '0')]), OrderedDict([('ip', '172.168.100.0'), ('mask', '0.0.0.255'), ('area', '0')])]), ('_xmlns', 'http://cisco.com/ns/yang/Cisco-IOS-XE-ospf')]))])), ('_xmlns', 'http://cisco.com/ns/yang/Cisco-IOS-XE-native')]))]))
+
+2021-05-01 14:57:15,360 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'ntp'} on 4 hosts
+2021-05-01 14:57:15,360 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'interface'} on 4 hosts
+2021-05-01 14:57:15,360 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'crypto'} on 4 hosts
+2021-05-01 14:57:15,361 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'enable'} on 4 hosts
+2021-05-01 14:57:15,365 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'ip'} on 4 hosts
+2021-05-01 14:57:15,365 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'line'} on 4 hosts
+2021-05-01 14:58:41,525 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'router'} on 4 hosts
+2021-05-01 14:58:42,655 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'ntp'} on 4 hosts
+2021-05-01 14:58:42,769 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'interface'} on 4 hosts
+2021-05-01 14:58:42,926 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'crypto'} on 4 hosts
+2021-05-01 14:58:43,063 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'enable'} on 4 hosts
+2021-05-01 14:58:43,176 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'ip'} on 4 hosts
+2021-05-01 14:58:43,397 -  nornir.core -     INFO -        run() - Running task 'get_feature' with args {'feature': 'line'} on 4 hosts
